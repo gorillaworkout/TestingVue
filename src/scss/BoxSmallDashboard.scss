@@ -1,0 +1,87 @@
+$header-color:#5E72E4;
+p{
+    margin-bottom:0px !important;
+    font-family: 'Open Sans';
+}
+
+.container-boxsmalldasboard{
+    width:100%;
+    height:200px;
+    background-color: $header-color;
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    padding-left:40px;
+    justify-content: space-between;
+    
+    .small-container-dashboard{
+        width:23%;
+        height:120px;
+        background-color: white;
+        border-radius:5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .scd-top{
+            width:100%;
+            height:60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding:15px;
+            
+            .total-traffic{
+                width:50%;
+                height:100%;
+                display: flex;
+                flex-direction: column;
+                p:nth-child(1){
+                    color: #8898AA;
+                    font-size:13px;
+                    text-align: left;;
+                    font-weight:600;
+                }
+                p:nth-child(2){
+                    color: #32325D;
+                    font-size:20px;
+                    font-weight:600;
+                    text-align: left;;
+                }
+            }
+            .box-icon-dashboard{
+                width:48px;
+                height:48px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color:#f56636;
+                border-radius:50%;
+            }
+        }
+        .scd-bottom{
+            width:100%;
+            height:40%;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            padding-left:15px;
+            padding-right:15px;
+            p:nth-child(2){
+                color:#2DCE89;
+                font-size:14px;
+                font-weight:300;
+                margin-right:10px;
+                margin-left:5px;
+            }
+            p:nth-child(3){
+                color:#525F7F;
+                font-size:14px;
+                font-weight:300;
+            }
+        }
+    }
+}

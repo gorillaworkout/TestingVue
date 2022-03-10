@@ -1,12 +1,17 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
+  <!-- <nav>
+    <router-link to="/">Home2</router-link> |
     <router-link to="/about">About</router-link>
-  </nav>
+  </nav> -->
   <router-view/>
 </template>
+<script>
+
+</script>
 
 <style lang="scss">
+// @import "~@/assets/scss/vendors/bootstrap-vue/index";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,6 +21,9 @@
 }
 
 nav {
+  body{
+    margin:0px !important;
+  }
   padding: 30px;
 
   a {

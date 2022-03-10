@@ -1,0 +1,33 @@
+
+body{
+    margin:0px;
+}
+.side-header-container{
+    width:61px;
+    height:100%;
+    .main-side-header{
+        width:61px;
+        height:1182px;
+        // border:1px solid green;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border:1px solid #F8F9FE;
+        
+        align-items: center;
+        padding-top:20px;
+        .sidebaricon{
+            margin-bottom:40px;
+        }
+        .icon-normal{
+            width:50%;
+            height:15px;
+            margin-bottom:20px;
+        }
+        .icon-separator{
+            width:30%;
+            height:15px;
+            margin-bottom:20px;
+        }
+    }
+}

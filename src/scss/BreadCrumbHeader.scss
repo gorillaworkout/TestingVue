@@ -1,0 +1,86 @@
+$header-color:#5E72E4;
+p{
+    margin-bottom:0px !important;
+}
+.container-breadcrumb{
+    width:100%;
+    height:auto;
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:$header-color;
+    padding-left:30px;
+    .bc-left{
+        // width:30%;
+        padding-left:10px;
+        padding-right:10px;
+        height:30%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        p{
+            margin-right:15px;
+            color:white; 
+            font-weight:600;
+            font-size:20px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+        nav{
+            padding:0px !important;
+            .breadcrumb{
+                margin-bottom:0px !important;
+                .breadcrumb-item {
+                    &::before{
+                        content:var(--bs-breadcrumb-diviver,"-");
+                        color:#ADB5BD;
+                        margin-right:5px;
+                        margin-left:5px;
+                    }
+                }
+                .bc-detail{
+                    color:white;
+                    font-weight:500;
+                    font-size:14px;
+                }
+            }
+        }
+    }
+    .bc-right{
+        width:15%;
+        height:30%;
+        // border:1px solid blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        .btn-new{
+            width:45px;
+            height:28px;
+            border-radius:8px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:$header-color;
+            font-size: 12px;
+            font-weight:600;
+            font-family:'Open Sans';
+        }
+        .btn-filters{
+            width:56px;
+            height:28px;
+            border-radius:8px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:$header-color;
+            font-size: 12px;
+            font-weight:600;
+            font-family:'Open Sans';
+        }
+    }
+}
