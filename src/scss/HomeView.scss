@@ -14,6 +14,55 @@ body{
         width: 100%;
         height:100%;
         // background-color: $background;
+
+        .box-chart {
+
+            height:400px;
+            
+            .firstChart {
+                width:50% !important;
+                canvas{
+                    background-color:#172b4d !important;
+                    color:white;
+                    // #5E72E4
+                }
+            }
+        }
+        .belajar-store{
+            width:100%;
+            height:200px;
+            border:1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .btn-tambah{
+                width:100px;
+                height:30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border:1px solid blue;
+            }
+            .btn-kurang{
+                width:100px;
+                height:30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border:1px solid blue;
+            }
+            .result {
+                width:200px;
+                height:20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border:1px solid blue;
+                position: relative;
+                left:20px;
+            }
+            
+        }
         
     }
 }

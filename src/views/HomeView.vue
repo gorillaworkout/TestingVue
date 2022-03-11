@@ -10,7 +10,28 @@
       <TopHeader/>
       <BreadCrumbHeader/>
       <BoxSmallDashboard/>
-      <line-chart :data="{'2017-05-13': 2, '2017-05-14': 5}"></line-chart>
+      <div class="box-chart">
+        <div class="box-title-chart"></div>
+        <line-chart  art class="firstChart"  
+          :download="false" :library="{backgroundColor: 'red'}" 
+          :dataset="{borderWidth: 5}"
+          :colors="['#5E72E4']" 
+          :data="{'January': 2, 'February': 5, 'March':2,'April':3,'May':1}" >
+        </line-chart>
+      </div>
+
+      <div class="belajar-store">
+
+        <div class="btn-tambah" @click="tambahFunc('testing')">
+          +
+        </div>
+        <div class="btn-kurang" @click="kurangFunc('testing')">
+          - 
+        </div>
+        <div class="result">
+          <p>{{resultAngka}}</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -34,8 +55,19 @@ export default {
     BoxSmallDashboard
     // HelloWorld
   },
- data(){
-
+  data(){
+    return {
+      resultAngka:0
+    }
+  },
+ methods:{
+   tambahFunc(params){
+     console.log(params)
+     this.resultAngka = (this.resultAngka + 1)
+   },
+   kurangFunc(){
+     this.resultAngka = (this.resultAngka - 1)
+   }
  }
   
 }
