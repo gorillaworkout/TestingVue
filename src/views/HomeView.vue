@@ -10,6 +10,7 @@
       <TopHeader/>
       <BreadCrumbHeader/>
       <BoxSmallDashboard/>
+      <line-chart :data="{'2017-05-13': 2, '2017-05-14': 5}"></line-chart>
     </div>
   </div>
 </template>
@@ -17,10 +18,12 @@
 <script>
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
+
 import SideHeader from '@/components/SideHeader.vue'
 import TopHeader from '@/components/TopHeader.vue'
 import BreadCrumbHeader from '@/components/BreadCrumbHeader.vue'
 import BoxSmallDashboard from '@/components/BoxSmallDashboard.vue'
+
 
 export default {
   name: 'HomeView',
@@ -30,7 +33,11 @@ export default {
     BreadCrumbHeader,
     BoxSmallDashboard
     // HelloWorld
-  }
+  },
+ data(){
+
+ }
+  
 }
 </script>
 
