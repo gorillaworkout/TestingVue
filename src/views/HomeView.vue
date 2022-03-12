@@ -13,14 +13,21 @@
       <div class="box-chart">
         <div class="box-title-chart"></div>
         <line-chart  art class="firstChart"  
-          :download="false" :library="{backgroundColor: 'red'}" 
+          :download="false" 
           :dataset="{borderWidth: 5}"
           :colors="['#5E72E4']" 
           :data="{'January': 2, 'February': 5, 'March':2,'April':3,'May':1}" >
         </line-chart>
+        <column-chart 
+        :data="[['Sun', 32], ['Mon', 46], ['Tue', 28],['Wed', 31], ['Thurs', 47], ['Fri', 27],['Sat', 30],['set', 32], ['sot', 46], ['sit', 28]]"
+          :dataset="{borderColor:'red', width:5}"
+         >
+        
+        </column-chart>
+
       </div>
 
-      <div class="belajar-store">
+      <!-- <div class="belajar-store">
 
         <div class="btn-tambah" @click="tambahFunc('testing')">
           +
@@ -31,7 +38,7 @@
         <div class="result">
           <p>{{resultAngka}}</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
